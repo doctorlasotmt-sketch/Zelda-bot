@@ -1,0 +1,79 @@
+{
+  "interval_seconds": 90,
+  "request_timeout_seconds": 25,
+  "remind_every_minutes": 10,
+  "notify_when_sold_out": true,
+  "alert_after_consecutive_blocks": 20,
+  "enable_browser": true,
+  "max_price": 560,
+  "defaults": {
+    "out_of_stock_patterns": [
+      "sold out",
+      "out of stock",
+      "currently unavailable",
+      "not available",
+      "coming soon",
+      "temporarily out",
+      "notify me when available",
+      "agotado",
+      "sin stock",
+      "no disponible",
+      "producto agotado"
+    ],
+    "in_stock_patterns": [
+      "add to cart",
+      "add to bag",
+      "buy now",
+      "pre-?order now",
+      "ship it",
+      "agregar al carro",
+      "añadir al carrito",
+      "comprar ahora"
+    ],
+    "online_only": true
+  },
+  "products": [
+    {
+      "id": "nintendo-us",
+      "store": "Nintendo Store",
+      "name": "Switch 2 – Zelda 40th Anniversary Edition",
+      "url": "https://www.nintendo.com/us/store/products/nintendo-switch-2-the-legend-of-zelda-40th-anniversary-edition-121642/",
+      "render_js": true,
+      "online_only": false,
+      "nota": "Nintendo Store solo vende online: cualquier stock aquí es compra online."
+    },
+    {
+      "id": "bestbuy-us",
+      "store": "Best Buy",
+      "name": "Switch 2 – Zelda 40th Anniversary Edition (SKU 6691841)",
+      "url": "https://www.bestbuy.com/site/6691841.p?skuId=6691841",
+      "render_js": true
+    },
+    {
+      "id": "target-us",
+      "store": "Target",
+      "name": "Switch 2 Zelda 40th Anniversary Edition Console",
+      "url": "https://www.target.com/p/-/A-1013322047",
+      "target_tcin": "1013322047",
+      "render_js": true
+    },
+    {
+      "id": "walmart-us",
+      "store": "Walmart",
+      "name": "Switch 2 – Zelda 40th Anniversary Edition",
+      "url": "https://www.walmart.com/ip/seort/21002656445",
+      "render_js": true,
+      "nota": "Lee los datos internos del producto; solo avisa si lo vende Walmart.com, con envío y ≤ max_price.",
+      "parser": "walmart",
+      "walmart_only_seller": true
+    },
+    {
+      "id": "ejemplo-tienda-chile",
+      "store": "Tienda CL (ejemplo)",
+      "name": "Pega aquí la URL del producto en tu tienda (Paris, Falabella, Weplay, etc.)",
+      "url": "https://example.com/",
+      "enabled": false,
+      "max_price": 0
+    }
+  ]
+}
